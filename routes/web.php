@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $comics = config('comics');
-    // dd($comics);
+// Route::get('/', function () {
+//     $comics = config('comics');
+//     // dd($comics);
 
-    return view('home', compact('comics'));
-});
+//     return view('home', compact('comics'));
+// })->name ('home');
+
+Route::get('/', 'Homecontroller@index')->name ('home');
