@@ -1,0 +1,36 @@
+.hero{
+    background-image: url('../img/bg-hero-home.jpg');
+    height: 390px;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    .container{
+        img{
+            position: absolute;
+            bottom: 0;
+            left: 280px;
+            z-index: 1;
+        }
+
+    }
+    
+    .blue-bar{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+        background: #0282f9;
+
+        h2{
+            position: absolute;
+            left: 220px;
+            bottom: 0px;
+            background: #0282f9;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 10px 15px ;
+            z-index: 2;
+        }
+    }
+}

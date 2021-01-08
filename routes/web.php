@@ -20,4 +20,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('home', compact('comics'));
 // })->name ('home');
 
-Route::get('/', 'Homecontroller@index')->name ('home');
+Route::get('/', 'HomeController@index')->name ('home');
+
+Route::get('/comic/{slug}', 'ComicController@show')->name('comic-detail');

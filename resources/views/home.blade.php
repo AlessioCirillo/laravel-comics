@@ -1,17 +1,65 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('content')
+    
+    @include('partials.hero-text')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <section class="main">
+        <div class="container">
+            <ul>
+                @foreach ($comics as $item)
+                    <li>
+                        <a href="{{ route('comic-detail', $item['slug']) }}">
+                            <img src="{{ $item['image'] }}" alt="">
+                            <div>{{ $item['title'] }}</div>
+                        </a>
+                    </li>
+                @endforeach
+            </ul>
 
-    </head>
-    <body>
-        
-    </body>
-</html>
+            <a href="">
+                <div class="button">
+                    <p>load more</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="merch">
+
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('img/digital-comics.png') }}" alt="">
+                        <p>digital comics</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('img/merchandise.png') }}" alt="">
+                         <p>dc merchandise</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('img/subscriptions.png') }}" alt="">
+                         <p>subscription</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('img/shop-locator.png') }}" alt="">
+                         <p>comic shop locator</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('img/power-visa.svg') }}" alt="">
+                         <p>dc power visa</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+@endsection

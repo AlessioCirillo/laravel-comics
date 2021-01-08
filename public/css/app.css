@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero .heighter {
+  height: 50px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 15px;
+}
+
+.header {
+  font-weight: 600;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container img {
+  width: 85px;
+}
+.header .container a {
+  color: #000;
+}
+.header .container ul {
+  display: flex;
+}
+.header .container ul li {
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.hero {
+  background-image: url("../img/bg-hero-home.jpg");
+  height: 390px;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+.hero .container img {
+  position: absolute;
+  bottom: 0;
+  left: 280px;
+  z-index: 1;
+}
+.hero .blue-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: #0282f9;
+}
+.hero .blue-bar h2 {
+  position: absolute;
+  left: 220px;
+  bottom: 0px;
+  background: #0282f9;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 2;
+}
+
+.main {
+  background: #1c1c1c;
+  font-size: 12px;
+  font-weight: 600;
+}
+.main .container {
+  padding: 15px;
+  text-align: center;
+}
+.main .container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+  text-align: left;
+}
+.main .container ul a {
+  color: #fff;
+}
+.main .container .button {
+  display: inline-block;
+  padding: 10px 50px;
+  margin: 10px 0;
+  background: #0282f9;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.merch {
+  background: #0282f9;
+  font-size: 12px;
+  font-weight: 600;
+}
+.merch .container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.merch .container ul a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.merch .container ul img {
+  height: 40px;
+  max-width: 45px;
+  margin: 10px;
+}
+
+.comic .hero {
+  height: 450px;
+  position: relative;
+}
+.comic .hero img {
+  position: absolute;
+  bottom: 20px;
+  left: 280px;
+  z-index: 1;
+}
+.comic .hero .blue-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #0282f9;
+  height: 70px;
+}

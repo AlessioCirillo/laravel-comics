@@ -1,0 +1,22 @@
+.comic{
+    .hero{
+        height: 450px;
+        position: relative;
+        
+        
+            
+            img{
+                position: absolute;
+                bottom: 20px;
+                left: 280px;
+                z-index: 1;
+            }
+            .blue-bar{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background: #0282f9;
+                height: 70px;
+            }
+        }
+}
