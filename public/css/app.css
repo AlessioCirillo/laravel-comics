@@ -23,6 +23,12 @@ a {
   padding: 15px;
 }
 
+.container-xl {
+  max-width: 1300px;
+  margin: auto;
+  padding: 15px;
+}
+
 .header {
   font-weight: 600;
 }
@@ -141,4 +147,85 @@ a {
   width: 100%;
   background: #0282f9;
   height: 70px;
+}
+
+footer {
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+  color: #929292;
+  font-weight: 600;
+  position: relative;
+}
+footer .white-bar {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  top: 0;
+}
+footer .container-xl {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container-xl .left-side {
+  width: 50%;
+  padding-top: 100px;
+}
+footer .container-xl .footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container-xl .footer-menu h2 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+footer .container-xl .footer-menu .dc-db,
+footer .container-xl .footer-menu .dc-network {
+  padding-right: 40px;
+}
+footer .container-xl .footer-menu li {
+  text-transform: capitalize;
+  padding: 2px 0;
+}
+footer .container-xl .copy {
+  padding: 30px 0;
+}
+footer .container-xl .copy a {
+  color: #0282f9;
+}
+footer .container-xl .footer-logo img {
+  width: 620px;
+}
+footer .footer-nav {
+  padding: 10px;
+  text-transform: uppercase;
+  background: #303030;
+}
+footer .footer-nav .button {
+  padding: 15px;
+  border: 2px solid #0282f9;
+  color: #fff;
+}
+footer .footer-nav .social {
+  display: flex;
+  align-items: center;
+}
+footer .footer-nav .social h2 {
+  color: #0282f9;
+}
+footer .footer-nav .social ul {
+  display: flex;
+  padding: 10px;
+}
+footer .footer-nav .social ul li {
+  margin: 10px;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: #929292;
+}
+footer .footer-nav .social ul li i {
+  color: #303030;
 }
